@@ -121,4 +121,12 @@ header p {
     font-weight: bold;
 }
 
+.menu-image {
+    width: 100%; /* تجعل الصورة تأخذ عرض كامل العنصر */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 8px; /* إضافة حواف مستديرة للصورة */
+    margin-bottom: 15px; /* مسافة بين الصورة والنص */
+}
+
+
 /*
