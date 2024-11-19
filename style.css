@@ -1,179 +1,41 @@
-/* إعدادات أساسية */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* رأس الصفحة */
-header {
-    background-color: #333;
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
 /* تنسيق الأزرار */
 .category-buttons {
     margin-top: 20px;
+    text-align: center;
 }
 
 .category-btn {
-    background-color: #e74c3c;
+    background: linear-gradient(135deg, #ff6b6b, #f39c12); /* تدرج لوني */
     color: white;
     font-size: 1.2em;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    padding: 12px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px; /* حواف منحنية */
     cursor: pointer;
-    margin: 5px;
-    transition: background-color 0.3s;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+    transition: all 0.3s ease; /* تأثيرات سريعة */
+    text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
 }
 
+/* تأثير عند التمرير على الأزرار */
 .category-btn:hover {
-    background-color: #c0392b;
+    background: linear-gradient(135deg, #f39c12, #ff6b6b); /* تغيير اتجاه التدرج عند التمرير */
+    transform: translateY(-5px); /* رفع الزر للأعلى عند التمرير */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التمرير */
 }
 
-/* الأقسام */
-.category {
-    display: none; /* إخفاء الأقسام بشكل افتراضي */
-    margin: 30px 0;
-    padding: 10px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+/* تأثير عند الضغط على الزر */
+.category-btn:active {
+    transform: translateY(2px); /* الزر ينزل للأسفل عند الضغط */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* تقليل الظل عند الضغط */
 }
 
-.category h2 {
-    font-size: 2.2em;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #e74c3c;  /* اللون الأحمر لجذب الانتباه */
-}
-
-/* تنسيق قائمة الطعام داخل كل قسم */
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* تنسيق العنصر الفردي داخل القائمة */
-.menu-item {
-    background-color: white;
-    width: 300px;  /* عرض العنصر */
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-/* التأثير عند التمرير فوق العنصر */
-.menu-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* تنسيق الصورة داخل العنصر */
-.menu-image {
-    width: 100%;
-    height: auto;  /* الحفاظ على تناسب الصورة */
-    object-fit: cover;  /* الحفاظ على تناسب الصورة دون تشويه */
-}
-
-/* تنسيق المعلومات داخل العنصر */
-.menu-info {
-    padding: 20px;
-    text-align: center;
-}
-
-.menu-info h3 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.menu-info p {
-    font-size: 1em;
-    color: #777;
-    margin-bottom: 10px;
-}
-
-.price {
-    font-size: 1.2em;
-    color: #e74c3c;
-    font-weight: bold;
-}
-
-/* تحسين مظهر التذييل */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-}
-
-/* تحسين تنسيق الأزرار على الشاشات الصغيرة */
+/* تحسين المظهر للأزرار على الشاشات الصغيرة */
 @media screen and (max-width: 768px) {
-    .category-buttons {
-        text-align: center;
-        margin-top: 20px;
-    }
-
     .category-btn {
-        width: 100%;
-        padding: 15px 0;
-        font-size: 1.2em;
-        margin-bottom: 10px;
-    }
-
-    .menu-item {
-        width: 100%; /* تجعل العناصر تأخذ العرض الكامل في الهواتف */
-    }
-
-    .menu-info h3 {
-        font-size: 1.6em; /* تقليل حجم الخط في الهواتف */
-    }
-
-    .menu-info p {
-        font-size: 0.9em; /* تقليل حجم الخط في الهواتف */
-    }
-
-    .price {
-        font-size: 1em; /* تقليل حجم السعر في الهواتف */
+        width: 90%; /* عرض الزر بنسبة أكبر في الشاشات الصغيرة */
+        padding: 15px 0; /* جعل الزر يأخذ عرض كامل مع مسافة صغيرة */
     }
 }
 
-/* تحسين تنسيق الصور في الشاشات الصغيرة */
-@media screen and (max-width: 480px) {
-    .menu-image {
-        height: 180px; /* تقليل حجم الصورة في الهواتف الصغيرة */
-    }
-
-    .category h2 {
-        font-size: 1.8em; /* تقليل حجم العنوان في الشاشات الصغيرة */
-    }
-}
