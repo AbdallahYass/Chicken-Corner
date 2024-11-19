@@ -29,8 +29,30 @@ header p {
     font-size: 1.2em;
 }
 
+/* تنسيق الأزرار */
+.category-buttons {
+    margin-top: 20px;
+}
+
+.category-btn {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.category-btn:hover {
+    background-color: #c0392b;
+}
+
 /* الأقسام */
 .category {
+    display: none; /* إخفاء الأقسام بشكل افتراضي */
     margin: 30px 0;
     padding: 10px;
     background-color: white;
@@ -41,4 +63,62 @@ header p {
 .category h2 {
     font-size: 2.2em;
     color: #333;
-    margin-bot
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e74c3c;  /* اللون الأحمر لجذب الانتباه */
+}
+
+/* تنسيق قائمة الطعام داخل كل قسم */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    background-color: white;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+}
+
+.menu-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-info h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu-info p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/*
