@@ -60,3 +60,9 @@ footer {
     width: 100%;
     bottom: 0;
 }
+.menu-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
