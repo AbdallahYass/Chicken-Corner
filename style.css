@@ -47,14 +47,16 @@ header p {
     background-color: #3498db;
     color: white;
     font-size: 1.2em;
-    padding: 12px 25px;
+    padding: 20px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     display: flex;
-    align-items: center; /* محاذاة الأيقونة والنص */
-    gap: 10px; /* المسافة بين الأيقونة والنص */
+    flex-direction: column; /* ترتيب الصورة فوق النص */
+    align-items: center; /* محاذاة الصورة والنص في المنتصف */
+    gap: 10px; /* المسافة بين الصورة والنص */
     transition: background-color 0.3s, transform 0.2s ease-in-out;
+    width: 150px; /* عرض ثابت للزر */
 }
 
 .category-btn:hover {
@@ -67,9 +69,14 @@ header p {
 }
 
 .category-btn img {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
+}
+
+.category-btn span {
+    font-size: 1em;
+    text-align: center;
 }
 
 .category {
@@ -146,8 +153,8 @@ footer {
 /* استجابة للأجهزة الصغيرة */
 @media screen and (max-width: 768px) {
     .category-btn {
-        width: 100%;
-        padding: 15px;
+        width: 120px; /* تقليل عرض الأزرار */
+        padding: 15px 20px;
         font-size: 1.1em;
     }
 
