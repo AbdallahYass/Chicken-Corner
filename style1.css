@@ -47,7 +47,7 @@ header p {
 }
 
 .dish-image {
-    max-width: 100%;
+    max-width: 10%;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
@@ -101,7 +101,7 @@ footer {
     }
 
     .dish-image {
-        max-height: 300px; /* تقليص حجم الصورة في الشاشات الصغيرة */
+        max-height: 30px; /* تقليص حجم الصورة في الشاشات الصغيرة */
     }
 }
 
