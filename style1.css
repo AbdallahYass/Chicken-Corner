@@ -51,7 +51,7 @@ header p {
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-    max-height: 400px; /* تحديد الحد الأقصى للطول */
+    max-height: 40px; /* تحديد الحد الأقصى للطول */
 }
 
 .dish-info {
