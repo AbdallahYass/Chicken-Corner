@@ -51,6 +51,9 @@ header p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center; /* محاذاة الأيقونة والنص */
+    gap: 10px; /* المسافة بين الأيقونة والنص */
     transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
 
@@ -61,6 +64,12 @@ header p {
 
 .category-btn:focus {
     outline: none;
+}
+
+.category-btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .category {
