@@ -46,13 +46,11 @@ header p {
     margin-bottom: 20px;
 }
 
-
-
 .dish-image {
-    width: 100%; /* تجعل الصورة تأخذ عرض كامل العنصر */
-    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
-    border-radius: 8px; /* إضافة حواف مستديرة للصورة */
-    margin-bottom: 15px; /* مسافة بين الصورة والنص */
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
 }
 
 .dish-info {
