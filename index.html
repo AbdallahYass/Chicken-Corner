@@ -45,7 +45,7 @@
     <div id="main-dishes" class="category">
         <h2>الوجبات الرئيسية</h2>
         <div class="menu">
-            <div class="menu-item">
+            <div class="menu-item" onclick="toggleDetails('dish1')">
                 <img src="dish1.jpg" alt="الطبق الأول" class="menu-image">
                 <div class="menu-info">
                     <h3>طبق 1</h3>
@@ -260,6 +260,7 @@
         window.onload = function() {
             showCategory('main-dishes');
         }
+        // دالة لعرض تفاصيل الصنف عند الضغط
         function toggleDetails(dishId) {
             const details = document.getElementById(dishId);
             // إذا كانت التفاصيل مخفية، أظهرها
