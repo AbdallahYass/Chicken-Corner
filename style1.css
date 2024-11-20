@@ -29,20 +29,36 @@ header p {
 
 .dish-detail {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* تنسيق عمودي للصورة والنصوص */
     align-items: center;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.dish-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .dish-image {
-    width: 400px;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
     object-fit: cover;
-    margin-right: 20px;
+    max-height: 400px; /* تحديد الحد الأقصى للطول */
 }
 
 .dish-info {
-    width: 50%;
+    width: 100%;
+    max-width: 800px; /* جعل النصوص أكثر تناسقًا */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .dish-info h3 {
@@ -50,10 +66,10 @@ header p {
     margin-bottom: 10px;
 }
 
-.dish-info p {
+.dish-description {
     font-size: 1.2em;
     color: #777;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .price {
@@ -67,5 +83,46 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+/* إعدادات متجاوبة (Responsive Design) */
+@media (max-width: 768px) {
+    .dish-info h3 {
+        font-size: 1.8em;
+    }
+
+    .dish-description {
+        font-size: 1.1em;
+    }
+
+    .price {
+        font-size: 1.3em;
+    }
+
+    .dish-image {
+        max-height: 300px; /* تقليص حجم الصورة في الشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .dish-info h3 {
+        font-size: 1.6em;
+    }
+
+    .dish-description {
+        font-size: 1em;
+    }
+
+    .price {
+        font-size: 1.2em;
+    }
 }
