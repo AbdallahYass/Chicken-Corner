@@ -177,6 +177,15 @@ footer {
     }
 }
 
+
+/* إخفاء تفاصيل الصنف بشكل افتراضي */
+.dish-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
 /* إضافة media query لتقليل حجم صورة الزر في الويندوز */
 @media screen and (min-width: 769px) {
     .category-btn img {
