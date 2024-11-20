@@ -29,16 +29,18 @@ header p {
 
 /* أزرار الأقسام - التمرير الأفقي */
 .category-buttons-wrapper {
-    overflow-x: auto;
+    display: flex;
+    justify-content: center; /* وضع الأزرار في المنتصف */
+    overflow-x: auto; /* تمكين التمرير الأفقي */
     white-space: nowrap;
     padding: 10px 0;
     margin-top: 20px;
 }
 
 .category-buttons {
-    display: inline-flex;
+    display: flex;
     gap: 10px;
-    transition: transform 0.3s ease;
+    padding: 5px;
 }
 
 .category-btn {
@@ -49,11 +51,12 @@ header p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
 
 .category-btn:hover {
     background-color: #2980b9;
+    transform: scale(1.1);
 }
 
 .category-btn:focus {
@@ -101,7 +104,6 @@ header p {
     border-radius: 8px; /* إضافة حواف مستديرة للصورة */
     margin-bottom: 15px; /* مسافة بين الصورة والنص */
 }
-
 
 .menu-info {
     padding: 15px;
