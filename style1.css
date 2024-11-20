@@ -46,12 +46,13 @@ header p {
     margin-bottom: 20px;
 }
 
+
+
 .dish-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 400px;
+    height: 300px;
     object-fit: cover;
-    max-height: 400px; /* تحديد الحد الأقصى للطول */
+    margin-right: 20px;
 }
 
 .dish-info {
