@@ -191,7 +191,7 @@ header p {
     color: #e74c3c;
 }
 
-/* تنسيق الفوتر */
+/* تنسيق الفوتر (مناسب لجميع الأجهزة) */
 footer {
     background-color: #333;
     color: white;
@@ -200,10 +200,12 @@ footer {
     margin-top: 20px;
 }
 
+/* تنسيق الفوتر: روابط التواصل الاجتماعي */
 footer .social-links {
     margin: 15px 0;
 }
 
+/* تنسيق الأيقونات في الفوتر */
 footer .social-icon {
     margin: 0 10px;
     display: inline-block;
@@ -233,6 +235,63 @@ footer .contact-info a {
 footer .contact-info a:hover {
     text-decoration: underline;
 }
+
+/* تنسيق المحتوى العام */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* استعلامات الوسائط للأجهزة المحمولة */
+@media (max-width: 768px) {
+    /* التنسيق عندما تكون الشاشة أصغر من 768px (أي على الهواتف المحمولة أو الشاشات الصغيرة) */
+    
+    /* تنسيق الأيقونات في الفوتر ليظهر بشكل عمودي */
+    footer .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer .social-icon {
+        margin-bottom: 10px;
+    }
+
+    footer .contact-info {
+        font-size: 1em;
+    }
+
+    footer .contact-info p {
+        margin: 10px 0;
+    }
+
+    /* توسيط النصوص داخل الفوتر */
+    footer p {
+        font-size: 1.2em;
+    }
+}
+
+/* استعلامات الوسائط للأجهزة الأكبر (الكمبيوتر) */
+@media (min-width: 769px) {
+    /* التنسيق عند الشاشات الأكبر من 768px (الكمبيوتر أو الشاشات الكبيرة) */
+    
+    footer .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .social-icon {
+        margin: 0 15px;
+    }
+
+    footer .contact-info {
+        font-size: 1.2em;
+    }
+}
+
 
 
 /* إخفاء تفاصيل الصنف بشكل افتراضي */
