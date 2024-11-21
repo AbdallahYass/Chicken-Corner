@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div id="logo-container">
+        <img src="dish1.jpg" alt="لوجو المطعم" id="logo">
+    </div>
+
+
     <!-- رأس الصفحة -->
-    <header>
+    <header id="menu-header" style="display: none;">
         <h1>Chicken Corner menu</h1>
         <p>استمتع بأفضل الأطباق لدينا</p>
     </header>
 
     <!-- أزرار الأقسام -->
-    <div class="category-buttons-wrapper">
+    <div class="category-buttons-wrapper" id="category-buttons" style="display: none;">
         <div class="category-buttons">
             <button class="category-btn" onclick="showCategory('main-dishes')">
                 <img src="dish1.jpg" alt="وجبات رئيسية" class="btn-icon"> 
@@ -243,6 +249,22 @@
     </footer>
 
     <script>
+
+                // إظهار المنيو بعد 3 ثوانٍ من تحميل الصفحة
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
+            // إخفاء اللوجو
+            document.getElementById('logo-container').style.display = 'none';
+            
+            // إظهار الرأس وأزرار الأقسام
+            document.getElementById('menu-header').style.display = 'block';
+            document.getElementById('category-buttons').style.display = 'block';
+            
+            // إظهار أول قسم من المنيو
+            showCategory('main-dishes');
+        }, 3000); // تأخير 3 ثوانٍ
+    });
+
         function showCategory(category) {
             // إخفاء جميع الأقسام
             const categories = document.querySelectorAll('.category');
