@@ -15,6 +15,19 @@
     animation: fadeInLogo 3s ease-in-out forwards;
 }
 
+/* استجابة للأجهزة الصغيرة (مثل الهاتف المحمول) */
+@media screen and (max-width: 768px) {
+    #logo-container img {
+        max-width: 80%;   /* تقليل حجم الصورة في الهواتف */
+    }
+}
+
+/* استجابة للشاشات الكبيرة (مثل الويندوز) */
+@media screen and (min-width: 1024px) {
+    #logo-container img {
+        max-width: 40%;   /* تقليل حجم اللوجو عند الشاشات الكبيرة */
+    }
+}
 @keyframes fadeInLogo {
     0% {
         opacity: 0;
