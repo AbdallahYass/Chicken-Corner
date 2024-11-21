@@ -8,105 +8,271 @@
 </head>
 <body>
 
-<!-- صفحة البداية مع اللوجو -->
 <div id="logo-container">
-    <img src="dish1.jpg" alt="لوجو المطعم" id="logo">
-</div>
-
-<!-- رأس الصفحة -->
-<header id="menu-header" style="display: none;">
-    <h1>Chicken Corner menu</h1>
-    <p>استمتع بأفضل الأطباق لدينا</p>
-</header>
-
-<!-- أزرار الأقسام -->
-<div class="category-buttons-wrapper" id="category-buttons" style="display: none;">
-    <div class="category-buttons">
-        <button class="category-btn" onclick="showCategory('main-dishes')">
-            <img src="dish1.jpg" alt="وجبات رئيسية" class="btn-icon"> 
-            الوجبات الرئيسية
-        </button>
-        <button class="category-btn" onclick="showCategory('appetizers')">
-            <img src="dish1.jpg" alt="مقبلات" class="btn-icon"> 
-            المقبلات
-        </button>
-        <button class="category-btn" onclick="showCategory('desserts')">
-            <img src="dish1.jpg" alt="حلويات" class="btn-icon"> 
-            الحلويات
-        </button>
-        <button class="category-btn" onclick="showCategory('drinks')">
-            <img src="dish1.jpg" alt="مشروبات" class="btn-icon"> 
-            المشروبات
-        </button>
-        <button class="category-btn" onclick="showCategory('sandwiches')">
-            <img src="dish1.jpg" alt="ساندويشات" class="btn-icon"> 
-            الساندويشات
-        </button>
+        <img src="dish1.jpg" alt="لوجو المطعم" id="logo">
     </div>
-</div>
 
-<!-- أقسام المنيو -->
-<div id="main-dishes" class="category">
-    <h2>الوجبات الرئيسية</h2>
-    <div class="menu">
-        <div class="menu-item" onclick="toggleDetails('dish1')">
-            <img src="dish1.jpg" alt="الطبق الأول" class="menu-image">
-            <h3>طبق 1</h3>
-            <div id="dish1" class="dish-details">
+    
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>Chicken Corner menu</h1>
+        <p>استمتع بأفضل الأطباق لدينا</p>
+    </header>
+
+    <!-- أزرار الأقسام -->
+    <div class="category-buttons-wrapper">
+        <div class="category-buttons">
+            <button class="category-btn" onclick="showCategory('main-dishes')">
+                <img src="dish1.jpg" alt="وجبات رئيسية" class="btn-icon"> 
+                الوجبات الرئيسية
+            </button>
+            <button class="category-btn" onclick="showCategory('appetizers')">
+                <img src="dish1.jpg" alt="مقبلات" class="btn-icon"> 
+                المقبلات
+            </button>
+            <button class="category-btn" onclick="showCategory('desserts')">
+                <img src="dish1.jpg" alt="حلويات" class="btn-icon"> 
+                الحلويات
+            </button>
+            <button class="category-btn" onclick="showCategory('drinks')">
+                <img src="dish1.jpg" alt="مشروبات" class="btn-icon"> 
+                المشروبات
+            </button>
+            <button class="category-btn" onclick="showCategory('sandwiches')">
+                <img src="dish1.jpg" alt="ساندويشات" class="btn-icon"> 
+                الساندويشات
+            </button>
+        </div>
+    </div>
+    <!-- أقسام المنيو -->
+    <div id="main-dishes" class="category">
+        <h2>الوجبات الرئيسية</h2>
+        <div class="menu">
+            <div class="menu-item" onclick="toggleDetails('dish1')">
+                <img src="dish1.jpg" alt="الطبق الأول" class="menu-image">
+                <h3>طبق 1</h3>
+                <div id="dish1" class="dish-details">
                 <div class="menu-info">
                     <p>وصف الطبق الأول. هذا الطبق مكون من الخضار الطازجة واللحوم المشوية، ويقدم مع الأرز البني.</p>
                     <p class="price">30 دينار أردني</p>
                     <p>مزيد من التفاصيل حول طريقة التحضير، المكونات الخاصة، وفوائد الطبق.</p>
                 </div>
+                    </div>
             </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="الطبق الأول" class="menu-image">
+                <div class="menu-info">
+                    <h3>طبق 1</h3>
+                    <p>وصف الطبق الأول.</p>
+                    <p class="price">30 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="الطبق الأول" class="menu-image">
+                <div class="menu-info">
+                    <h3>طبق 1</h3>
+                    <p>وصف الطبق الأول.</p>
+                    <p class="price">30 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="الطبق الأول" class="menu-image">
+                <div class="menu-info">
+                    <h3>طبق 1</h3>
+                    <p>وصف الطبق الأول.</p>
+                    <p class="price">30 دينار أردني</p>
+                </div>
+            </div>
+            <!-- إضافة 9 أصناف أخرى هنا بنفس التنسيق -->
         </div>
-        <!-- إضافة بقية الأصناف هنا بنفس التنسيق -->
+        
     </div>
-</div>
 
-<!-- باقي الأقسام (المقبلات، الحلويات، المشروبات، الساندويشات) ستبقى كما هي -->
+    <div id="appetizers" class="category">
+        <h2>المقبلات</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="المقبلات" class="menu-image">
+                <div class="menu-info">
+                    <h3>مقبلات 1</h3>
+                    <p>وصف المقبلات الأولى.</p>
+                    <p class="price">15 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="المقبلات" class="menu-image">
+                <div class="menu-info">
+                    <h3>مقبلات 1</h3>
+                    <p>وصف المقبلات الأولى.</p>
+                    <p class="price">15 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="المقبلات" class="menu-image">
+                <div class="menu-info">
+                    <h3>مقبلات 1</h3>
+                    <p>وصف المقبلات الأولى.</p>
+                    <p class="price">15 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="المقبلات" class="menu-image">
+                <div class="menu-info">
+                    <h3>مقبلات 1</h3>
+                    <p>وصف المقبلات الأولى.</p>
+                    <p class="price">15 دينار أردني</p>
+                </div>
+            </div>
+            <!-- إضافة 9 أصناف أخرى هنا بنفس التنسيق -->
+        </div>
+    </div>
 
-<footer>
-    <p>Chicken Corner menu</p>
-</footer>
+    <div id="desserts" class="category">
+        <h2>الحلويات</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="الحلويات" class="menu-image">
+                <div class="menu-info">
+                    <h3>حلويات 1</h3>
+                    <p>وصف الحلويات الأولى.</p>
+                    <p class="price">20 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="الحلويات" class="menu-image">
+                <div class="menu-info">
+                    <h3>حلويات 1</h3>
+                    <p>وصف الحلويات الأولى.</p>
+                    <p class="price">20 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="الحلويات" class="menu-image">
+                <div class="menu-info">
+                    <h3>حلويات 1</h3>
+                    <p>وصف الحلويات الأولى.</p>
+                    <p class="price">20 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="الحلويات" class="menu-image">
+                <div class="menu-info">
+                    <h3>حلويات 1</h3>
+                    <p>وصف الحلويات الأولى.</p>
+                    <p class="price">20 دينار أردني</p>
+                </div>
+            </div>
+            <!-- إضافة 9 أصناف أخرى هنا بنفس التنسيق -->
+        </div>
+    </div>
 
-<script>
-    // إظهار المنيو بعد 3 ثوانٍ من تحميل الصفحة
-    document.addEventListener('DOMContentLoaded', function () {
-        setTimeout(function () {
-            // إخفاء اللوجو
-            document.getElementById('logo-container').style.display = 'none';
-            
-            // إظهار الرأس وأزرار الأقسام
-            document.getElementById('menu-header').style.display = 'block';
-            document.getElementById('category-buttons').style.display = 'block';
-            
-            // إظهار أول قسم من المنيو
-            showCategory('main-dishes');
-        }, 3000); // تأخير 3 ثوانٍ
-    });
+    <div id="drinks" class="category">
+        <h2>المشروبات</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="المشروبات" class="menu-image">
+                <div class="menu-info">
+                    <h3>مشروب 1</h3>
+                    <p>وصف المشروب الأول.</p>
+                    <p class="price">10 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="المشروبات" class="menu-image">
+                <div class="menu-info">
+                    <h3>مشروب 1</h3>
+                    <p>وصف المشروب الأول.</p>
+                    <p class="price">10 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="المشروبات" class="menu-image">
+                <div class="menu-info">
+                    <h3>مشروب 1</h3>
+                    <p>وصف المشروب الأول.</p>
+                    <p class="price">10 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="المشروبات" class="menu-image">
+                <div class="menu-info">
+                    <h3>مشروب 1</h3>
+                    <p>وصف المشروب الأول.</p>
+                    <p class="price">10 دينار أردني</p>
+                </div>
+            </div>
+            <!-- إضافة 9 أصناف أخرى هنا بنفس التنسيق -->
+        </div>
+    </div>
 
-    function showCategory(category) {
-        // إخفاء جميع الأقسام
-        const categories = document.querySelectorAll('.category');
-        categories.forEach(cat => cat.style.display = 'none');
+    <div id="sandwiches" class="category">
+        <h2>الساندويشات</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="ساندويشات" class="menu-image">
+                <div class="menu-info">
+                    <h3>ساندويش 1</h3>
+                    <p>وصف الساندويش الأول.</p>
+                    <p class="price">25 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="ساندويشات" class="menu-image">
+                <div class="menu-info">
+                    <h3>ساندويش 1</h3>
+                    <p>وصف الساندويش الأول.</p>
+                    <p class="price">25 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="ساندويشات" class="menu-image">
+                <div class="menu-info">
+                    <h3>ساندويش 1</h3>
+                    <p>وصف الساندويش الأول.</p>
+                    <p class="price">25 دينار أردني</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="dish1.jpg" alt="ساندويشات" class="menu-image">
+                <div class="menu-info">
+                    <h3>ساندويش 1</h3>
+                    <p>وصف الساندويش الأول.</p>
+                    <p class="price">25 دينار أردني</p>
+                </div>
+            </div>
+            <!-- إضافة 9 أصناف أخرى هنا بنفس التنسيق -->
+        </div>
+    </div>
 
-        // إظهار القسم الذي يتم اختياره
-        const selectedCategory = document.getElementById(category);
-        selectedCategory.style.display = 'block';
-    }
+    <footer>
+        <p>Chicken Corner menu</p>
+    </footer>
 
-    // دالة لعرض تفاصيل الصنف عند الضغط
-    function toggleDetails(dishId) {
-        const details = document.getElementById(dishId);
-        // إذا كانت التفاصيل مخفية، أظهرها
-        if (details.style.display === "none" || details.style.display === "") {
-            details.style.display = "block";
-        } else {
-            details.style.display = "none"; // إذا كانت التفاصيل ظاهرة، اخفها
+    <script>
+        function showCategory(category) {
+            // إخفاء جميع الأقسام
+            const categories = document.querySelectorAll('.category');
+            categories.forEach(cat => cat.style.display = 'none');
+
+            // إظهار القسم الذي يتم اختياره
+            const selectedCategory = document.getElementById(category);
+            selectedCategory.style.display = 'block';
         }
-    }
-</script>
 
+        // عرض أول قسم عند تحميل الصفحة
+        window.onload = function() {
+            showCategory('main-dishes');
+        }
+        // دالة لعرض تفاصيل الصنف عند الضغط
+        function toggleDetails(dishId) {
+            const details = document.getElementById(dishId);
+            // إذا كانت التفاصيل مخفية، أظهرها
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none"; // إذا كانت التفاصيل ظاهرة، اخفها
+            }
+        }
+    </script>
 </body>
 </html>
