@@ -319,14 +319,6 @@ body {
     transition: opacity 0.3s ease; /* تأثير عند المرور */
 }
 
-/* تخصيص الأيقونات داخل الخلفية */
-.social-icon {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 50%; /* خلفية دائرية */
-    background-color: #fff;
-    transition: background-color 0.3s ease;
-}
 
 /* تغيير الخلفية عند المرور */
 .social-icon:hover {
