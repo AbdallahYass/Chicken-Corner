@@ -9,7 +9,27 @@
     height: 100vh;
     background-color: #f8f8f8;
 }
+/* إعدادات اللوجو */
+#logo-container img {
+    max-width: 100%;    /* الصورة ستأخذ العرض الأقصى من الحاوية */
+    height: auto;       /* الحفاظ على النسبة الأصلية للعرض والطول */
+    display: block;     /* إزالة المسافة تحت الصورة */
+    margin: 0 auto;     /* محاذاة الصورة إلى المركز */
+}
 
+/* استجابة للأجهزة الصغيرة (مثل الهاتف المحمول) */
+@media screen and (max-width: 768px) {
+    #logo-container img {
+        max-width: 80%;   /* تقليل حجم الصورة في الهواتف */
+    }
+}
+
+/* استجابة للشاشات الكبيرة (مثل الويندوز) */
+@media screen and (min-width: 1024px) {
+    #logo-container img {
+        max-width: 40%;   /* تقليل حجم اللوجو عند الشاشات الكبيرة */
+    }
+}
 #logo {
     max-width: 80%;
     animation: fadeInLogo 3s ease-in-out forwards;
