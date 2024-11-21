@@ -34,6 +34,33 @@
     margin-top: 20px;
 }
 
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* لجعل اللوجو يظهر في منتصف الصفحة */
+    background-color: #f8f8f8;
+}
+
+#logo {
+    max-width: 80%; /* لتقليص حجم اللوجو إذا كان كبيرًا */
+    animation: fadeInLogo 3s ease-in-out forwards;
+}
+
+/* تأثير اللوجو */
+@keyframes fadeInLogo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* إخفاء المنيو في البداية */
+#menu-container {
+    display: none;
+}
 
 
 /* إعدادات أساسية */
