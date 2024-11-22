@@ -27,6 +27,15 @@
     }
 }
 
+
+
+@media screen and (min-width: 1024px) {
+   #menu-header #logo {
+        width: 80px;         /* عرض الصورة للأجهزة الصغيرة جداً */
+        margin: 0 auto 5px;  /* تقليل المسافة بين الصورة والنص */
+    }
+}
+
 /* تنسيق اللوجو للأجهزة الصغيرة جداً (الهواتف الصغيرة) */
 @media (max-width: 480px) {
     #menu-header #logo {
