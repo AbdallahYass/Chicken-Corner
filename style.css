@@ -306,28 +306,54 @@ body {
 
 
 
-#search-container {
-    text-align: center;
-    margin: 20px 0;
+/* تنسيق حاوية البحث */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-#search-input {
+/* تنسيق حقل البحث */
+.search-container input {
     padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
     width: 300px;
-    margin-right: 10px;
+    transition: all 0.3s ease;
 }
 
-#search-container button {
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
+/* تنسيق حقل البحث عند التركيز */
+.search-container input:focus {
+    border-color: #009688;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 150, 136, 0.3);
+}
+
+/* تنسيق زر البحث */
+.search-container button {
+    background-color: #009688;
     border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 30px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-#search-container button:hover {
-    background-color: #218838;
+/* تأثير عند مرور الفأرة على زر البحث */
+.search-container button:hover {
+    background-color: #00796b;
 }
+
+/* تنسيق الأيقونة داخل الزر */
+.search-container button i {
+    color: white;
+    font-size: 20px;
+}
+
 
 
 
