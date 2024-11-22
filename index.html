@@ -10,12 +10,6 @@
 </head>
 <body>
 
-    
-    <div id="search-container">
-        <input type="text" id="search-input" placeholder="ابحث عن طبق...">
-        <button onclick="searchMenu()">بحث</button>
-    </div>
-    
 <div id="logo-container">
     <img src="dish11.png" alt="لوجو المطعم" id="logo" class="btn-icon">
 </div>
@@ -50,6 +44,15 @@
             </button>
         </div>
     </div>
+
+<div class="search-container">
+    <input type="text" id="search" placeholder="ابحث عن الوجبة...">
+    <button id="search-btn" onclick="searchMenu()">
+        <i class="fas fa-search"></i>
+    </button>
+</div>
+
+    
     <!-- أقسام المنيو -->
     <div id="main-dishes" class="category">
         <h2>الوجبات الرئيسية</h2>
