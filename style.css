@@ -1,15 +1,3 @@
-#logo-container {
-    background-color: #a5d8ff; /* لون أزرق فاتح */
-    padding: 20px;              /* إضافة مسافة حول اللوجو */
-    border-radius: 10px;        /* إضافة حواف دائرية */
-    display: inline-block;      /* ضمان أن اللوجو لن يشغل المساحة كاملة */
-}
-
-#logo {
-    max-width: 100%;            /* التأكد من أن الصورة ستتقلص بشكل مناسب */
-    height: auto;               /* الحفاظ على نسبة الأبعاد الأصلية للصورة */
-}
-
 /* تخصيص الخط المستقيم */
 .custom-line {
     border: none;               /* إزالة الحدود الافتراضية */
@@ -55,6 +43,7 @@
 
 /* بعض التنسيقات الأساسية */
 #logo-container {
+    background-color: #b3e6b3; /* لون أخضر فاتح */
     display: flex;
     justify-content: center;
     align-items: center;
