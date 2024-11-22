@@ -298,19 +298,9 @@
             const selectedCategory = document.getElementById(category);
             selectedCategory.style.display = 'block';
         }
-// البحث
-    function searchMenu() {
-        const searchInput = document.getElementById("search-input").value.toLowerCase();
-        const menuItems = document.querySelectorAll(".menu-item");
-        menuItems.forEach(item => {
-            const title = item.querySelector("h3").textContent.toLowerCase();
-            const description = item.querySelector("p").textContent.toLowerCase();
-            if (title.includes(searchInput) || description.includes(searchInput)) {
-                item.style.display = "block";
-            } else {
-                item.style.display = "none";
-            }
-        });
+
+        
+
 
         
         // دالة لعرض تفاصيل الصنف عند الضغط
