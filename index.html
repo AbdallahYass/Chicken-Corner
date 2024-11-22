@@ -315,21 +315,19 @@
 
 
 function searchMenu() {
-    const searchInput = document.getElementById("search-input").value.toLowerCase(); // الحصول على النص المدخل في مربع البحث
-    const menuItems = document.querySelectorAll(".menu-item"); // الحصول على جميع عناصر القائمة
-
+    const searchTerm = document.getElementById('search').value.toLowerCase();
+    const menuItems = document.querySelectorAll('.menu-item');
+    
     menuItems.forEach(item => {
-        const title = item.querySelector("h3").textContent.toLowerCase(); // الحصول على اسم الطبق
-        const description = item.querySelector("p").textContent.toLowerCase(); // الحصول على وصف الطبق
-
-        // إذا كان النص المدخل يتطابق مع اسم الطبق أو وصفه، نظهر العنصر
-        if (title.includes(searchInput) || description.includes(searchInput)) {
-            item.style.display = "block"; // إظهار العنصر
+        const dishName = item.querySelector('h3').textContent.toLowerCase();
+        if (dishName.includes(searchTerm)) {
+            item.style.display = 'block';  // عرض الطبق إذا تم العثور عليه
         } else {
-            item.style.display = "none"; // إخفاء العنصر
+            item.style.display = 'none';  // إخفاء الطبق إذا لم يتم العثور عليه
         }
     });
 }
+
 
         
     </script>
