@@ -325,6 +325,20 @@ body {
     background-color: #f1f1f1;
 }
 
+/* تخصيص تنسيق الأيقونات ليظهروا جنب بعض */
+.social-links {
+    display: flex; /* جعل الأيقونات في صف واحد */
+    justify-content: center; /* لضبط الأيقونات في منتصف الشاشة */
+    gap: 15px; /* المسافة بين الأيقونات */
+    margin-top: 15px; /* المسافة بين المحتوى العلوي */
+}
+/* تخصيص الأيقونات بشكل كامل على الهاتف */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: row; /* ترتيب الأيقونات في صف واحد */
+        justify-content: space-around; /* توزيع الأيقونات بشكل متساوٍ */
+    }
+}
 
 /* إخفاء تفاصيل الصنف بشكل افتراضي */
 .dish-details {
