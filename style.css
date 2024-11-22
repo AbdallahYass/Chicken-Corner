@@ -9,6 +9,7 @@
 }
 
 #menu-header #logo1 {
+    background-color: #ffc040;
     width: 150px;            /* عرض الصورة للأجهزة المكتبية */
     height: auto;            /* الحفاظ على نسبة العرض إلى الارتفاع للصورة */
     display: block;          /* التأكد من أن الصورة عنصر منفصل يمكن تنسيقه */
@@ -101,7 +102,7 @@ body {
 
 header {
     color: black;
-    padding: 30px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
