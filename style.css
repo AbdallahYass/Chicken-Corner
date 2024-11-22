@@ -243,56 +243,32 @@ body {
     box-sizing: border-box;
 }
 
-/* استعلامات الوسائط للأجهزة المحمولة */
+
+
+
+/* تخصيص تنسيق الأيقونات ليظهروا جنب بعض */
+.social-links {
+    display: flex; /* جعل الأيقونات في صف واحد */
+    justify-content: center; /* لضبط الأيقونات في منتصف الشاشة */
+    gap: 15px; /* المسافة بين الأيقونات */
+    margin-top: 15px; /* المسافة بين المحتوى العلوي */
+}
+
+/* تخصيص الأيقونات */
+.social-icon {
+    display: inline-block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* تخصيص الأيقونات بشكل كامل على الهاتف */
 @media (max-width: 768px) {
-    /* التنسيق عندما تكون الشاشة أصغر من 768px (أي على الهواتف المحمولة أو الشاشات الصغيرة) */
-    
-    /* تنسيق الأيقونات في الفوتر ليظهر بشكل عمودي */
-    footer .social-links {
-        display: flex; /* جعل الأيقونات في صف واحد */
-        justify-content: center; /* لضبط الأيقونات في منتصف الشاشة */
-        gap: 15px; /* المسافة بين الأيقونات */
-        margin-top: 15px; /* المسافة بين المحتوى العلوي */
+    .social-links {
         flex-direction: row; /* ترتيب الأيقونات في صف واحد */
         justify-content: space-around; /* توزيع الأيقونات بشكل متساوٍ */
     }
-    
-    footer .social-icon {
-        margin-bottom: 10px;
-    }
-
-    footer .contact-info {
-        font-size: 1em;
-    }
-
-    footer .contact-info p {
-        margin: 10px 0;
-    }
-
-    /* توسيط النصوص داخل الفوتر */
-    footer p {
-        font-size: 1.2em;
-    }
 }
 
-/* استعلامات الوسائط للأجهزة الأكبر (الكمبيوتر) */
-@media (min-width: 769px) {
-    /* التنسيق عند الشاشات الأكبر من 768px (الكمبيوتر أو الشاشات الكبيرة) */
-    
-    footer .social-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer .social-icon {
-        margin: 0 15px;
-    }
-
-    footer .contact-info {
-        font-size: 1.2em;
-    }
-}
 
 /* تغيير اللون الأصلية للأيقونات */
 
