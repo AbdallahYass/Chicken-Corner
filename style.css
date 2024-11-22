@@ -119,16 +119,7 @@ header p {
     font-size: 1.2em;
 }
 
-/* أزرار الأقسام - التمرير الأفقي
-.category-buttons-wrapper {
-    display: flex;
-    justify-content: center; /* وضع الأزرار في المنتصف */
-    align-items: center;       /* محاذاة الأزرار عمودياً في المنتصف */
-    overflow-x: auto; /* تمكين التمرير الأفقي */
-    white-space: nowrap;
-    padding: 10px 0;
-    margin-top: 20px;
-} */
+
 .category-buttons-wrapper {
     display: flex;             /* تفعيل الفلكس */
     justify-content: center;   /* محاذاة الأزرار أفقياً في المنتصف */
