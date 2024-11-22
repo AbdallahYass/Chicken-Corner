@@ -123,6 +123,7 @@ header p {
 .category-buttons-wrapper {
     display: flex;
     justify-content: center; /* وضع الأزرار في المنتصف */
+    align-items: center;       /* محاذاة الأزرار عمودياً في المنتصف */
     overflow-x: auto; /* تمكين التمرير الأفقي */
     white-space: nowrap;
     padding: 10px 0;
