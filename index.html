@@ -15,7 +15,10 @@
 </div>
 
 
-
+<div id="search-container">
+    <input type="text" id="search-input" placeholder="ابحث عن طبق...">
+    <button onclick="searchMenu()">بحث</button>
+</div>
     <!-- رأس الصفحة -->
     <header id="menu-header" style="display: none;">
         <h1>Chicken Corner menu</h1>
@@ -296,8 +299,21 @@
             const selectedCategory = document.getElementById(category);
             selectedCategory.style.display = 'block';
         }
+// البحث
+    function searchMenu() {
+        const searchInput = document.getElementById("search-input").value.toLowerCase();
+        const menuItems = document.querySelectorAll(".menu-item");
+        menuItems.forEach(item => {
+            const title = item.querySelector("h3").textContent.toLowerCase();
+            const description = item.querySelector("p").textContent.toLowerCase();
+            if (title.includes(searchInput) || description.includes(searchInput)) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        });
 
-
+        
         // دالة لعرض تفاصيل الصنف عند الضغط
         function toggleDetails(dishId) {
             const details = document.getElementById(dishId);
