@@ -299,11 +299,6 @@
             const selectedCategory = document.getElementById(category);
             selectedCategory.style.display = 'block';
         }
-
-        
-
-
-        
         // دالة لعرض تفاصيل الصنف عند الضغط
         function toggleDetails(dishId) {
             const details = document.getElementById(dishId);
@@ -314,6 +309,26 @@
                 details.style.display = "none"; // إذا كانت التفاصيل ظاهرة، اخفها
             }
         }
+
+
+function searchMenu() {
+    const searchInput = document.getElementById("search-input").value.toLowerCase(); // الحصول على النص المدخل في مربع البحث
+    const menuItems = document.querySelectorAll(".menu-item"); // الحصول على جميع عناصر القائمة
+
+    menuItems.forEach(item => {
+        const title = item.querySelector("h3").textContent.toLowerCase(); // الحصول على اسم الطبق
+        const description = item.querySelector("p").textContent.toLowerCase(); // الحصول على وصف الطبق
+
+        // إذا كان النص المدخل يتطابق مع اسم الطبق أو وصفه، نظهر العنصر
+        if (title.includes(searchInput) || description.includes(searchInput)) {
+            item.style.display = "block"; // إظهار العنصر
+        } else {
+            item.style.display = "none"; // إخفاء العنصر
+        }
+    });
+}
+
+        
     </script>
 </body>
 </html>
