@@ -306,6 +306,28 @@ body {
 
 
 
+#search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+#search-container button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-container button:hover {
+    background-color: #218838;
+}
 
 
 
