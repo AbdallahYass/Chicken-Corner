@@ -304,8 +304,6 @@ body {
 }
 
 
-
-
 /* تنسيق حاوية البحث */
 .search-container {
     display: flex;
@@ -319,22 +317,22 @@ body {
 .search-container input {
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #ccc;
+    border: 2px solid #ffc020; /* حدود الحقل باللون الذهبي */
     border-radius: 30px;
     width: 300px;
     transition: all 0.3s ease;
+    outline: none;
 }
 
 /* تنسيق حقل البحث عند التركيز */
 .search-container input:focus {
-    border-color: #009688;
-    outline: none;
-    box-shadow: 0 0 10px rgba(0, 150, 136, 0.3);
+    border-color: #ff9800; /* تغيير الحدود عند التركيز بلون أغمق قليلاً */
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.3); /* تأثير الظل عند التركيز */
 }
 
 /* تنسيق زر البحث */
 .search-container button {
-    background-color: #009688;
+    background-color: #ffc020; /* خلفية الزر باللون الذهبي */
     border: none;
     padding: 10px 20px;
     margin-left: 10px;
@@ -345,7 +343,7 @@ body {
 
 /* تأثير عند مرور الفأرة على زر البحث */
 .search-container button:hover {
-    background-color: #00796b;
+    background-color: #ff9800; /* تغيير اللون عند المرور بالماوس إلى لون أغمق */
 }
 
 /* تنسيق الأيقونة داخل الزر */
